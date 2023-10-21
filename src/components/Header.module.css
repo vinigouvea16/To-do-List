@@ -1,0 +1,15 @@
+.header{
+  background: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  padding: 4.5rem 41rem 5rem;
+  @media (max-width: 476px){
+    padding: 5rem 0;
+    width: 100%;
+  }
+}
+
+.header img{
+  height: 3rem;
+  width: 7.875rem;
+}

@@ -1,0 +1,64 @@
+input{
+  background: var(--gray-500);
+  color: var(--gray-100);
+  padding: 1rem;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  resize: none;
+  width: 100%;
+  height: 3.375rem;
+  box-shadow: 4px 8px 17px 0px #000;
+}
+
+.taskForm button{
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  font-size: 0.875rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 8px 17px 0px #000;
+}
+
+@media (max-width: 476px){
+  .taskForm button span{
+    display: none;
+  }
+  .taskForm{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.taskForm button:hover{
+  background-color: var(--blue);
+}
+.taskForm button span{
+  margin-right: .5rem;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 46rem;
+  gap: 8px;
+  /* z-index: 1; */
+  top: 10.8rem;
+  position: absolute;
+  @media(max-width: 476px){
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.taskForm button[type=submit]:disable{
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
